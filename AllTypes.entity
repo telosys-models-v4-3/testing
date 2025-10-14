@@ -1,0 +1,77 @@
+// Entity 
+// designed to test attributes types with different annotations 
+
+
+AllTypes {
+  id : int   { @Id } ;
+
+  xInt    : int   ;
+  xUInt   : int   { @UnsignedType  } ;
+  xOInt   : int   { @ObjectType    } ;
+  xUOInt  : int   { @UnsignedType  @ObjectType   } ;
+  xPInt   : int   { @PrimitiveType } ;
+  xNNInt  : int   { @NotNull } ;
+  
+  xByte   : byte  ;  
+  xUByte  : byte  { @UnsignedType } ;
+  xOByte  : byte  { @ObjectType   } ;
+  xUOByte : byte  { @UnsignedType @ObjectType   } ;
+  xPByte  : byte  { @PrimitiveType } ;
+  xNNByte : byte  { @NotNull } ;
+    
+  xShort   : short ;  
+  xUShort  : short { @UnsignedType } ;
+  xOShort  : short { @ObjectType   } ;
+  xUOShort : short { @UnsignedType @ObjectType   } ;
+  xPShort  : short { @PrimitiveType } ;
+  xNNShort : short { @NotNull } ;
+  
+  xLong   : long  ;
+  xULong  : long  { @UnsignedType } ;
+  xOLong  : long  { @ObjectType } ;
+  xUOLong : long  { @UnsignedType @ObjectType } ;
+  xPLong  : long  { @PrimitiveType } ;
+  xNNLong : long  { @NotNull } ;
+  
+  xFloat    : float    ;
+  xUFloat   : float { @UnsignedType }   ;
+  xOFloat   : float { @ObjectType }  ;
+  xUOFloat  : float { @UnsignedType @ObjectType }  ;
+  xPFloat   : float { @PrimitiveType }   ;
+  xNNFloat  : float { @NotNull }   ;
+  
+  xDouble   : double   ;
+  xUDouble  : double { @UnsignedType }  ;
+  xODouble  : double { @ObjectType }  ;
+  xUODouble : double { @UnsignedType @ObjectType }  ;
+  xPDouble  : double { @PrimitiveType }  ;
+  xNNDouble : double { @NotNull }  ;
+  
+  xDecimal   : decimal  ;
+  xUDecimal  : decimal { @UnsignedType } ;
+  xODecimal  : decimal { @ObjectType } ;
+  xNNDecimal : decimal { @NotNull } ;
+
+  xString   : string  ;
+  xPString  : string { @PrimitiveType } ;
+  xOString  : string { @ObjectType    } ;
+  xNNString : string { @NotNull       } ;
+    
+  xBoolean   : boolean ;  
+  xPBoolean  : boolean { @PrimitiveType } ;  
+  xOBoolean  : boolean { @ObjectType    };  
+  xNNBoolean : boolean { @NotNull    };  
+
+  xDate : date ;  
+  xDatetime : datetime ;  
+  xDatetimeTZ : datetimetz ;  
+
+  xTime : time ;  
+  xTimeTZ : timetz ;  
+
+  xTimestamp : timestamp ;
+
+  xUuid : uuid ;  
+  
+  xBinary : binary ;  
+}
