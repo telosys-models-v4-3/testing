@@ -1,0 +1,8 @@
+
+@DbTable("T_FOO")
+Foo {
+  id   : uuid   { @Id @GeneratedValue(AUTO) }; 
+
+  name : string { @NotNull @NotBlank } ;
+}
+
