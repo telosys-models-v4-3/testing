@@ -48,14 +48,14 @@ AllTypes {
   xNNDouble : double { @NotNull }  ;
   
   xDecimal   : decimal  ;
-  xUDecimal  : decimal { @UnsignedType } ;
-  xODecimal  : decimal { @ObjectType } ;
-  xNNDecimal : decimal { @NotNull } ;
+  xUDecimal  : decimal { @UnsignedType  @Size(10)} ;
+  xODecimal  : decimal { @ObjectType   @MaxLen(33) } ;
+  xNNDecimal : decimal { @NotNull  @Size(10,2) @MaxLen(33)} ;
 
   xString   : string  ;
-  xPString  : string { @PrimitiveType } ;
-  xOString  : string { @ObjectType    } ;
-  xNNString : string { @NotNull       } ;
+  xPString  : string { @PrimitiveType @Size(24)} ;
+  xOString  : string { @ObjectType    @MaxLen(33)  } ;
+  xNNString : string { @NotNull       @Size(24) @MaxLen(33) } ;
     
   xBoolean   : boolean ;  
   xPBoolean  : boolean { @PrimitiveType } ;  
